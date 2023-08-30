@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         width: 300,
         margin: 0,
         paddingLeft: 30,
-        borderWidth: 1,
+        borderBottomWidth: 1,
     },
 
     inputIcon: {

@@ -15,9 +15,12 @@ export default function Login() {
       </View>
 
       <View style={styles.inputContainer}> 
-        <TextInput style={styles.inputField} placeholder='Password'/>
+        <TextInput style={styles.inputField} secureTextEntry={true} placeholder='Password'/>
         <Image style={styles.inputIcon} source={require('../../assets/imgs/SeePass.png')}/>
       </View>
+      <TouchableOpacity>
+        <Text style={styles.forgotText}>Forgot Password?</Text>
+      </TouchableOpacity>
       <TouchableOpacity style={styles.buttonContainer}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
