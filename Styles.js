@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         alignItems: "flex-start",
         width: 360,
-        paddingTop: 40,
+        paddingTop: 50,
     },
 
     borrowFormHeader: {
@@ -26,31 +26,15 @@ const styles = StyleSheet.create({
     smallLogoContainer: {
         marginLeft: 'auto', // Pushes the small logo to the right
     },
-
-    body: {
-        flex: 1,
-        paddingVertical: 10,
-        paddingHorizontal: 15,
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        alignSelf: 'stretch',
-    },
     
-    first: {
-        flex: 1,
+    formFirstContainer: {
+        display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
         alignSelf: 'stretch',
-        marginVertical: 10, // For gap-like spacing, you can use marginVertical
-    },
-
-    title: {
-        flex: 1,
-        paddingVertical: 0,
-        paddingHorizontal: 7,
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        alignSelf: 'stretch',
+        paddingTop: 40,
+        paddingHorizontal: 19,
+        paddingBottom: 10,
     },
 
     formTitle: {
@@ -61,9 +45,35 @@ const styles = StyleSheet.create({
         lineHeight: 20 * 1.5, // Adjust as needed based on your design
     },
 
-    sampleText:{
-        fontSize: 20,
-    }
+    firstFormContainer: {
+        marginTop: 5,
+        backgroundColor: '#CEE7C5',
+        borderRadius: 8,
+        alignSelf: 'stretch',
+        width: 330,
+        height: 171,
+    },
+
+    formContainernc: {
+        marginHorizontal: 10,
+        marginVertical: 8,
+    },
+
+    firstFormLabel: {
+        color: '#000',
+        fontSize: 13,
+        fontStyle: 'normal',
+        fontWeight: '500',
+        lineHeight: 25, // React Native uses the actual pixel value for lineHeight, so you can directly specify it.
+    },
+
+    firstFormInput: {
+        width: 310,
+        height: 44,
+        borderRadius: 8,
+        backgroundColor: 'white',
+        padding: 10,
+    },
 })
 
 export default styles;

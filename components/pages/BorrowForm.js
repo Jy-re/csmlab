@@ -17,15 +17,30 @@ export default function BorrowForm() {
             </View>
 
             {/* This is for the body*/}
-            
-            <View style={styles.body}>
-                <View style={styles.first}>
-                    <View style={styles.title}>
-                        <Text style={styles.formTitle}>Fill-up Form</Text>
+            <View style={styles.formFirstContainer}>
+                <View>
+                    <Text style={styles.formTitle}>Fill-Up Form</Text>
+                </View>
+                <View>
+                    <View style={styles.firstFormContainer}>
+                        <View style={styles.formContainernc}>
+                        <View>
+                            <Text style={styles.firstFormLabel}>Student ID (Leader)</Text>
+                        </View>
+                        <View>
+                            <TextInput style={styles.firstFormInput} placeholder='Student ID'></TextInput>
+                        </View>
+                        <View>
+                            <Text style={styles.firstFormLabel}>Course</Text>
+                        </View>
+                        <View>
+                            <TextInput style={styles.firstFormInput} placeholder='Course'></TextInput>
+                        </View>
+                        </View>
                     </View>
                 </View>
-                
             </View>
+
         </View>
     )
 }
