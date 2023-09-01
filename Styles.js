@@ -2,6 +2,10 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 
+    pageBody: {
+        backgroundColor: '#F2FAF4',
+    },
+
     borrowFormPageContainer:{
         flexDirection: "column",
         alignItems: "flex-start",
@@ -11,12 +15,11 @@ const styles = StyleSheet.create({
 
     borrowFormHeader: {
         flex: 1,
-        paddingVertical: 0,
+        paddingVertical: 5,
         paddingHorizontal: 22,
         justifyContent: "space-between",
         alignItems: "center",
         alignSelf: "stretch",
-        backgroundColor: 'yellow',
     },
 
     arrowContainer: {
@@ -38,6 +41,7 @@ const styles = StyleSheet.create({
     },
 
     formTitle: {
+        marginTop: 10,
         color: '#1E1A4D',
         fontSize: 20,
         fontStyle: 'normal',
@@ -73,7 +77,14 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         backgroundColor: 'white',
         padding: 10,
+        alignSelf: 'stretch',
     },
+
+    additionalContainer: {
+        marginHorizontal: 10,
+        marginVertical: 8,
+    }
+
 })
 
 export default styles;
