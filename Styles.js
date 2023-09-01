@@ -101,7 +101,11 @@ const styles = StyleSheet.create({
 
     addButton: {
         backgroundColor: '#5CBD10'
-    }
+    },
+
+    removeButton: {
+        backgroundColor: 'red',
+    },
 
 
 
