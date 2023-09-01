@@ -83,7 +83,27 @@ const styles = StyleSheet.create({
     additionalContainer: {
         marginHorizontal: 10,
         marginVertical: 8,
+        paddingBottom: 300,
+    },
+
+    tableContainter: {
+        backgroundColor: 'white',
+        marginTop: 20,
+        padding: 10,
+        borderRadius: 8,
+    },
+
+
+    tableRow: {
+        borderBottomWidth: 1,
+        borderColor: '#000',
+    },
+
+    addButton: {
+        backgroundColor: '#5CBD10'
     }
+
+
 
 })
 
