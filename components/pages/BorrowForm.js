@@ -4,6 +4,8 @@ import styles from '../../Styles.js';
 import { Table, Row } from 'react-native-table-component';
 
 export default function BorrowForm() {
+
+  //Test Datas
   const header = ['Item No.', 'Description', 'Qty.', 'Action'];
   const data = [
     ['001', 'Coat', '10', 'Delete'],
@@ -88,7 +90,7 @@ export default function BorrowForm() {
                 <View>
                   <TextInput style={styles.firstFormInput} placeholder="Search Equipment to Add" />
                 </View>
-                <View style={styles.tableContainer}>
+                <View style={styles.tableContainter}>
                   <Table style={styles.tableStyle}>
                     <Row style={styles.tableRow} data={header} />
                     {data.map((rowData, index) => (
@@ -101,16 +103,26 @@ export default function BorrowForm() {
                 <View>
                   <Text style={styles.formTitle}>Members</Text>
                 </View>
+
                 {borrowers.map((borrower) => (
                   <View key={borrower.id}>
-                    <Text style={styles.firstFormLabel}>Borrower {borrower.id}</Text>
+                    <View style={styles.borrowerLabelButton}>
+                      <View style={styles.borrowerLabelContainer}>
+                        <Text style={styles.firstFormLabel}>Borrower {borrower.id}</Text>
+                      </View>
+                      
+                      {/* Need to change this button and enclose on views so I can flex them. Replace text with remove image */}
+                      
+                      <View style={styles.borrowerRemoveButton}>
+                        <TouchableOpacity
+                          onPress={() => removeBorrower(borrower.id)}>
+                          <Image source={require('../../assets/imgs/Remove.png')}/>
+                        </TouchableOpacity>
+                      </View>
+                    </View>
+                    
 
-                    {/* Need to change this button and enclose on views so I can flex them. Replace text with remove image */}
-                    <TouchableOpacity
-                      onPress={() => removeBorrower(borrower.id)} // Remove the corresponding borrower
-                    >
-                      <Text>Remove</Text>
-                    </TouchableOpacity>
+                    
                     <TextInput
                       style={styles.firstFormInput}
                       placeholder="Student ID"
@@ -129,9 +141,25 @@ export default function BorrowForm() {
                     
                   </View>
                 ))}
-                <TouchableOpacity style={styles.addButton} onPress={addBorrower}>
-                  <Text>Add</Text>
-                </TouchableOpacity>
+                <View style={styles.addButton}>
+                  <TouchableOpacity onPress={addBorrower}>
+                    <Image source={require('../../assets/imgs/Plus.png')} />
+                  </TouchableOpacity>
+                </View>
+
+                <View style={styles.sendRequestContainer}>
+                  <TouchableOpacity style={styles.requestButton}>
+                    <Text style={styles.requestText}>Request</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity style={styles.cancelButton}>
+                    <Text style={styles.cancelText}>Cancel</Text>
+                  </TouchableOpacity>
+                </View>
+
+                <View style={styles.newGenes}>
+                  <Image source={require('../../assets/imgs/NewGenesLogo.png')}/>
+                </View>
+                
               </View>
             </View>
           </View>

@@ -10,12 +10,14 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         alignItems: "flex-start",
         width: 360,
-        paddingTop: 50,
+        marginTop: 30,
     },
 
     borrowFormHeader: {
+        backgroundColor: '#F2FAF4',
         flex: 1,
-        paddingVertical: 5,
+        paddingTop: 20,
+        paddingBottom: 40,
         paddingHorizontal: 22,
         justifyContent: "space-between",
         alignItems: "center",
@@ -31,11 +33,12 @@ const styles = StyleSheet.create({
     },
     
     formFirstContainer: {
+        zIndex: 1,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
         alignSelf: 'stretch',
-        paddingTop: 40,
+        paddingTop: 30,
         paddingHorizontal: 19,
         paddingBottom: 10,
     },
@@ -95,18 +98,70 @@ const styles = StyleSheet.create({
 
 
     tableRow: {
+        justifyContent: 'center',
+        alignItems: 'center',
         borderBottomWidth: 1,
         borderColor: '#000',
     },
 
     addButton: {
-        backgroundColor: '#5CBD10'
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 20,
     },
 
     removeButton: {
         backgroundColor: 'red',
     },
 
+    borrowerLabelButton: {
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    borrowerLabelContainer: {
+        marginRight: 'auto',
+    },
+
+    sendRequestContainer: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: 10,
+    },
+
+    requestButton: {
+        backgroundColor: '#C8ECB8',
+        width: 310,
+        height: 44,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 8,
+        marginTop: 20,
+
+    },
+
+    cancelButton: {
+        backgroundColor: '#ECC4B8',
+        width: 310,
+        height: 44,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 8,
+
+    },
+
+    fontSize: {
+        color: '#',
+        fontSize: 13,
+        fontStyle: 'normal',
+        fontWeight: '500',
+        lineHeight: 13,
+    },
+
+    newGenes: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 40,
+    },
 
 
 })
