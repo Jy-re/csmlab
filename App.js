@@ -1,10 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-export default function App() {
+import DashboardScreen from './screens/dashboard';
+
+
+import FillUp from './screens/FillUpForm';
+
+
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View>
-      <Text>Do not touch this! Create a branch and work there to make your changes</Text>
-    </View>
+    
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Dashboard" component={DashboardScreen} options={{headerShown: false}} />
+        <Stack.Screen name="FillUp" component={FillUp} options={{headerShown: false}} />
+      
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
+export default App;
