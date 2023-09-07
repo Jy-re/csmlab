@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'flex-start',
         alignSelf: 'stretch',
-        paddingTop: 30,
         paddingHorizontal: 19,
         paddingBottom: 10,
     },
