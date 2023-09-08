@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 //import files
-import BorrowForm from './components/pages/BorrowForm';
+import BorrowForm from './components/BorrowForm';
 
 //const sa stack. test.
 const Stack = createNativeStackNavigator(); 
